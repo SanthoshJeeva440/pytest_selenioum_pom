@@ -1,0 +1,8 @@
+pytest
+selenium
+pytest-selenium
+webdriver-manager
+pytest-html
+selenium-page-factory
+PyYAML
+pytest_robotframework
