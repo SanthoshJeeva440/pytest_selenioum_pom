@@ -16,4 +16,8 @@ class LoginPage(Base_Page):
         else:
             self.input_text(self.locator.INPUT_USERNAME, ENTER_USERNAME)
             self.input_text(self.locator.INPUT_PASSWORD, ENTER_PASSWORD)
-        self.set_time(5)
+        self.set_time(2)
+
+    def click_login_button(self):
+        self.click_element(self.locator.BUTTON_SIGNIN)
+        self.set_time(3)
