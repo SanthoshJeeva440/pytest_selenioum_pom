@@ -2,13 +2,14 @@ from config.config_setup import Configuration
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+import conftest
 
 
 class Base_Page:
     ENV_CONFIG = Configuration.get_config()
 
-    def __init__(self, driver):
-        self.driver = driver
+    def __init__(self):
+        self.driver = conftest.driver
         self.wait = WebDriverWait(self.driver, 10)
         self.time = time
 

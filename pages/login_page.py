@@ -3,8 +3,8 @@ from locators import po_login
 
 
 class LoginPage(Base_Page):
-    def __init__(self, driver):
-        super().__init__(driver)
+    def __init__(self):
+        super().__init__()
         self.locator = po_login
 
     def enter_username_and_password(self, ENTER_USERNAME, ENTER_PASSWORD):
